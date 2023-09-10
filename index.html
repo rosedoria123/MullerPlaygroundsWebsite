@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>East Austin Toddler Playgrounds</title>
+</head>
+
+<body>
+
+    <header class="jumbotron jumbotron-fluid">
+        <div class= "container">
+            <div class= "row">
+                <div class="col-md-3  align-self-center">
+                    <img src="img/austinTexasLogo.jpeg"class="img-fluid"/>
+                </div>
+                <div class= "col align-self-center">
+                    <h1>East Austin Toddler Playgrounds</h1>
+                </div>
+            </div>
+        </div>    
+    </header>
+
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="img/cityOfAustinLogo.jpg" height="30" width="30"/></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#eastAustinNavBar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="eastAustinNavBar">
+                <ul class="navbar-nav">
+                    <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-home fa-lg"></i> Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="aboutus.html"><i class="fa fa-info fa-lg"></i> About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
+                </ul>
+                <span class="navbar-text ml-auto">
+                    <a role="button" data-toggle="modal" data-target="#subscribeModal">
+                        <i class="fa fa-sign-in"></i>Subscribe
+                    </a>
+                </span>
+            </div>
+        </div>
+    </nav>
+    <div id="subscribeModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Subscribe</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail" placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword" placeholder="Password">
+                                </div>
+                                <div class="col">
+                                    <div class="form-check">
+                                        <input class="form=check-input" type="checkbox">
+                                        <label class="form-check-label">Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                <button type="button" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>
+        <p class="center-text">Welcome to our website, dedicated to providing information about toddler-friendly playgrounds in East Austin!</p>
+    </h2>
+
+        <div class="container">
+            <div class="row row-content">
+                <div class="col-md-8 mx-auto">
+                    <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#homeCarousel" data-slide-to="1"></li>
+                            <li data-target="#homeCarousel" data-slide-to="2"></li>
+                            <li data-target="#homeCarousel" data-slide-to="3"></li>
+                        </ol>
+                        <div class="carousel-inner" style="height: 500px;">
+                            <div class="carousel-item active">
+                                <img class="d-block w-100" src="img/ellaWootenPlayground2.jpg"/>
+                                <div class="carousel-caption">
+                                    <h3>Ella Wooten Playground</h3>
+                                    <p class="d-none d-sm-block">Muller Neighborhood Playground</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/pattersonParkPlaygroundCarousel.jpg"/>
+                                <div class="carousel-caption">
+                                    <h3>Patterson Park Playground</h3>
+                                    <p class="d-none d-sm-block">CherryWood Neighborhood Park with mature trees.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/branchPark.jpg"/>
+                                <div class="carousel-caption">
+                                    <h3>Mary Elizabeth Branch Park Playground</h3>
+                                    <p class="d-none d-sm-block">Located across farmers market and Kerby Lane Cafe.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img class="d-block w-100" src="img/mullerLakePlayground.jpg"/>
+                                <div class="carousel-caption">
+                                    <h3>Muller Lake Playground</h3>
+                                    <p class="d-none d-sm-block">Most well known playrgound in Muller Neighborhood.</p>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev" href="#homeCarousel" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#homeCarousel" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                                <button class="btn btn-danger btn-sm" id="carouselButton">
+                                    <i class="fa fa-pause"></i>
+                                </button>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class= "row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/ellaWootenPlayground.jpg"  style="width: 200px; height: 150px;"/>
+                    <div class="media-body align-self-center">
+                        <h3>Ella Wooten Playground</h3>
+                        <p class="d-none d-sm-block">Muller Neighborhood Park 
+                            <ul>
+                                <li>Address: 2047 Pinckney St, Austin, TX 78723</li>
+                                <li>Hours: Monday-Sunday 6 a.m.-10 p.m.</li>
+                                <li><i class="fa-solid fa-restroom"></i> Bathrooms available with changing tables</li>
+                                <li><i class="fa-solid fa-circle-parking"></i> Street Parking available</li>
+                                <li><i class="fa-solid fa-faucet-drip"></i> Water fountain available</li>
+                                <li><i class="fa-solid fa-basketball"></i> Basketball Court</li>
+                                <li><i class="fa-solid fa-person-swimming"></i> Swimming Pool</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class= "row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/pattersonPlaygroundBody.jpg" style="width: 200px; height: 150px;"/>
+                    <div class="media-body align-self-center">
+                        <h3>Patterson Park Playground</h3>
+                        <p class="d-none d-sm-block">Cherrywood Neighborhood Park
+                            <ul>
+                                <li>Address:4200 Brookview Rd, Austin, TX 78722 </li>
+                                <li>Hours: Monday-Sunday 6 a.m.-10 p.m.</li>
+                                <li><i class="fa-solid fa-restroom"></i> Bathrooms available with changing tables</li>
+                                <li><i class="fa-solid fa-circle-parking"></i> Street Parking available & Small Parking Lot located at Pharr Tennis Center</li>
+                                <li><i class="fa-solid fa-faucet-drip"></i> Water fountain available</li>
+                                <li><i class="fa-solid fa-basketball"></i> Basketball Court</li>
+                                <li><i class="fa-solid fa-person-swimming"></i> Swimming Pool</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class= "row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/maryElizabethBranchParkBody.jpg" style="width: 200px; height: 150px;"/>
+                    <div class="media-body align-self-center">
+                        <h3>Mary Elizabeth Branch Park Playground</h3>
+                        <p class="d-none d-sm-block">Muller Neighborhood park located across farmers market building
+                            <ul>
+                                <li>Address: 2006 Philomena St, Austin, TX 78723</li>
+                                <li>Hours: Monday-Sunday 6 a.m.-10 p.m.</li>
+                                <li><i class="fa-solid fa-restroom"></i> Bathrooms available with changing tables</li>
+                                <li><i class="fa-solid fa-circle-parking"></i> Pay to Park street parking & Parking Garage</li>
+                                <li><i class="fa-solid fa-faucet-drip"></i> Water fountain available</li>
+                                <li>Splash Pad</li>
+                                <li>Volleyball Court</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class= "row row-content align-items-center">
+            <div class="col">
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/mullerLakePlaygroundBody.jpg" style="width: 200px; height: 150px;"/>
+                    <div class="media-body align-self-center">
+                        <h3>Muller Lake Park Playground</h3>
+                        <p class="d-none d-sm-block">Muller Neighborhood park located across Muller Lake and Thinkery Childrens Museum
+                            <ul>
+                                <li>Address:4550 Mueller Blvd, Austin, TX 78723</li>
+                                <li>Hours: Monday-Sunday 6 a.m.-10 p.m.</li>
+                                <li><i class="fa-solid fa-restroom"></i> Bathrooms available with changing tables</li>
+                                <li><i class="fa-solid fa-circle-parking"></i> Pay to Park street parking & small parking lot</li>
+                                <li><i class="fa-solid fa-faucet-drip"></i> Water fountain available</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <footer class="site-footer"> 
+        <div class="contatiner">
+            <div class="row">
+                <div class="col-4 col-sm-2 offset-1">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="aboutus.html">About</a></li>
+                        <li><a href="#">Sites</a></li>
+                        <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-sm-5 text-center">
+                    <h5>Social</h5>
+                    <a href="http://instagram.com/"><i class="fa fa-instagram"></i></a>
+                    <a href="http://facebook.com/"><i class="fa fa-facebook"></i></a>
+                    <a href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                </div>
+                <div class="col-sm-4 text-center">
+                    <i class="fa fa-phone fa-lg text-primary"></i> 512-200-6000<br />
+                    <i class="fa fa-envelope fa-lg text-primary"></i> eastaustinparks@gmail.com
+                </div>
+            </div>
+        </div>
+    </footer>
+
+        <!-- jQuery must come first, then Popper.js, then the Bootstrap JavaScript plugins.-->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+
+        <script>
+            $(function() {
+                $(".carousel").carousel( { interval: 2000 } );
+                $("#carouselButton").click(function(){
+                    if ($("#carouselButton").children("i").hasClass("fa-pause")) {
+                        $(".carousel").carousel("pause");
+                        $("#carouselButton").children("i").removeClass("fa-pause");
+                        $("#carouselButton").children("i").addClass("fa-play");
+                    } else {
+                        $(".carousel").carousel("cycle");
+                        $("#carouselButton").children("i").removeClass("fa-play");
+                        $("#carouselButton").children("i").addClass("fa-pause"); 
+                    }
+                });
+            });
+        </script>
+
+
+</body>
+
+</html>
